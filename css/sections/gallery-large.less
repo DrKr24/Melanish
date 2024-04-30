@@ -1,0 +1,35 @@
+.gallery-large {
+  &__inner {
+    position: relative;
+    &:extend(.inner-padding);
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(30px, 18.51vw, 200px);
+  }
+  &-item {
+    max-width: 1440px;
+    display: flex;
+    &:nth-child(odd) {
+      justify-content: flex-start;
+    }
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+    &:nth-child(2) {
+      position: relative;
+      &::before {
+        content: "Editorial";
+        position: absolute;
+        top: -12%;
+        left: 32%;
+        z-index: -1;
+        .fluid-text(50px, 220px);
+        text-align: center;
+        color: #8d8d8d;
+      }
+    }
+    & > img {
+      width: 70%;
+    }
+  }
+}

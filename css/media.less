@@ -1,0 +1,42 @@
+@x-large: 1660px;
+@middle-large: 1300px;
+@large: 992px;
+@medium: 768px;
+@small: 576px;
+@x-small: 440px;
+
+.x-small(@content) {
+  @media (max-width: @x-small) {
+    @content();
+  }
+}
+
+.small(@content) {
+  @media (max-width: @small) {
+    @content();
+  }
+}
+
+.medium(@content) {
+  @media (max-width: @medium) {
+    @content();
+  }
+}
+
+.large(@content) {
+  @media (max-width: @large) {
+    @content();
+  }
+}
+
+.middle-large(@content) {
+  @media (max-width: @middle-large) {
+    @content();
+  }
+}
+
+.x-large(@content) {
+  @media (max-width: @x-large) {
+    @content();
+  }
+}

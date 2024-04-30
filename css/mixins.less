@@ -1,0 +1,13 @@
+.fluid-text(@min-size, @max-size, @container-width: 1440px) {
+  font-size: clamp(
+    @min-size,
+    (@max-size / @container-width * 100vw),
+    @max-size
+  );
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

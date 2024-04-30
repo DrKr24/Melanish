@@ -1,0 +1,33 @@
+:root {
+  --container-width: 1440px;
+  --container-padding: 85px;
+
+  --primary-color-first: #fff;
+  --primary-color-second: #d6d0ce;
+  --background-color: #151313;
+
+  --font-family-first: "nymphatrial";
+  --font-family-second: "sf-pro-display";
+
+  --transition-duration: 0.5s;
+}
+
+* {
+  transition-duration: var(--transition-duration);
+}
+
+body {
+  font-family: var(--font-family-first);
+  font-weight: 400;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-first);
+}
+
+ul,
+ol {
+  list-style: none;
+}

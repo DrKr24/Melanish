@@ -1,0 +1,44 @@
+.gallery-small {
+  &__inner {
+    position: relative;
+    &:extend(.inner-padding);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 280px;
+    .large({
+      margin-bottom: 160px;
+    });
+    .small({
+      margin-bottom: 80px;
+    });
+  }
+  &-item {
+    position: relative;
+    &:nth-child(odd) {
+      text-align: right;
+    }
+    &:nth-child(even) {
+      text-align: left;
+    }
+    &-image {
+      width: 45%;
+      &:nth-child(1) {
+        margin-bottom: -280px;
+        .large({
+          margin-bottom: -160px;
+        });
+        .small({
+          margin-bottom: -80px;
+        });
+      }
+    }
+    &:nth-child(3) {
+      padding-right: 70px;
+      .large({
+        margin-bottom: -160px;
+        padding-right: 0px;
+      });
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.next-project {
+  &__inner {
+    position: relative;
+    &:extend(.inner-padding);
+  }
+  &-title {
+    .fluid-text(40px, 154px);
+    position: absolute;
+    translate: 38% 150%;
+    z-index: 2;
+    .middle-large({
+      translate: 35% 150%;
+    });
+    .medium({
+      translate: 34% 165%;
+    });
+    .small({
+      translate: 33% 180%;
+    });
+    .x-small({
+      translate: 31% 195%;
+    });
+  }
+  &-collage {
+    display: flex;
+    justify-content: center;
+    & > img {
+      width: 30%;
+      position: relative;
+      &:nth-child(2) {
+        margin-inline: -170px;
+        z-index: 1;
+        top: 32px;
+        .middle-large({
+          margin-inline: -130px;
+        });
+        .large({
+          margin-inline: -100px;
+        });
+        .medium({
+          margin-inline: -70px;
+        });
+        .small({
+          margin-inline: -20px;
+          top: 25px;
+        });
+      }
+      &:nth-child(3) {
+        top: 75px;
+        .small({
+          top: 35px;
+        });
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  padding-top: 50px;
+  .large({
+    padding-top: 25px;
+  });
+  &__inner {
+    padding-inline: 15px;
+    position: relative;
+  }
+  &__nav {
+    &-list {
+      .flex-center;
+      justify-content: space-between;
+      &-item {
+        text-transform: uppercase;
+        font-family: var(--font-family-second);
+        font-weight: 500;
+        .fluid-text(14px, 18px);
+        &-link {
+          &:hover {
+            color: var(--primary-color-second);
+          }
+        }
+        &-image {
+          .small({
+            width: 120px
+          });
+        }
+      }
+    }
+  }
+}
